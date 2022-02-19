@@ -1,0 +1,77 @@
+body {
+    --border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+button {
+    font-weight: bold;
+    border: var(--border);
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.2em 0.8em;
+}
+
+#widget {
+    height: clamp(300px, 50%, 700px);
+    width: clamp(300px, 50%, 900px);
+    min-height: 400px;
+    min-width: 300px;
+    max-height: 700px;
+    max-width: 900px;
+    padding: 0.8em;
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    resize: both;
+    overflow: hidden;
+}
+
+#widget-header {
+    height: 5%;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+#widget-content {
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 4fr 2fr;
+    gap: 1em;
+    align-items: center;
+}
+
+#widget-plot-container {
+    height: 100%;
+    width: 100%;
+    border: var(--border);
+}
+
+#widget-menu-top {
+    width: max-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+}
+
+#widget-menu-bottom {
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0.5em;
+}
+
+#widget-menu-bottom > .header {
+    grid-row: 1 / span 2;
+}
+
+.input-slider {
+    max-width: 150px;
+}
+
+#widget-menu-bottom > .input-number {
+    width: 4em;
+    border: var(--border);
+    padding: 0.2em 0.8em;
+}
