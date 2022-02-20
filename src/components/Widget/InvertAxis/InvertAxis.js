@@ -1,8 +1,13 @@
+import Button from "@mui/material/Button";
+
 const InvertAxisToggle = ({ labelX, labelY, unitsX, unitsY, toggleInvertAxis }) => {
     return (
         <>
             <div className="header">Select X-Y plot data:</div>
-            <button onClick={toggleInvertAxis}>Toggle Axis</button>
+
+            <Button size="small" variant="outlined" onClick={toggleInvertAxis}>
+                Toggle Axis
+            </Button>
             <div>
                 <div>
                     <span>X-axis: </span>

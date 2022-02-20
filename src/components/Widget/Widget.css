@@ -44,8 +44,10 @@ button {
 
 #widget-plot-container {
     height: 100%;
-    width: 100%;
+    width: calc(100% - 4px);
     border: var(--border);
+    border-radius: 4px;
+    padding: 1px;
 }
 
 #widget-menu-top {
@@ -55,23 +57,19 @@ button {
     gap: 1em;
 }
 
-#widget-menu-bottom {
+/* #widget-menu-bottom {
     width: max-content;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: auto auto;
     gap: 0.5em;
-}
-
-#widget-menu-bottom > .header {
-    grid-row: 1 / span 2;
-}
+} */
 
 .input-slider {
     max-width: 150px;
 }
 
-#widget-menu-bottom > .input-number {
+/* #widget-menu-bottom > .input-number {
     width: 4em;
     border: var(--border);
     padding: 0.2em 0.8em;
-}
+} */

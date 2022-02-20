@@ -38,6 +38,7 @@ const Widget = () => {
                 <span>{headerText}</span>
                 <a href="https://github.com/nconnector/">
                     <button>X</button>
+                    {/* //import CancelPresentationIcon from '@mui/icons-material/CancelPresentation'; */}
                 </a>
             </div>
             <div id="widget-content">
