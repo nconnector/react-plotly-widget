@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-plotly-widget/static/css/main.85f07a24.css",
-    "main.js": "/react-plotly-widget/static/js/main.ea55c4b6.js",
+    "main.css": "/react-plotly-widget/static/css/main.b2efd3f2.css",
+    "main.js": "/react-plotly-widget/static/js/main.29de5fed.js",
     "static/js/787.067438e7.chunk.js": "/react-plotly-widget/static/js/787.067438e7.chunk.js",
     "index.html": "/react-plotly-widget/index.html",
-    "main.85f07a24.css.map": "/react-plotly-widget/static/css/main.85f07a24.css.map",
-    "main.ea55c4b6.js.map": "/react-plotly-widget/static/js/main.ea55c4b6.js.map",
+    "main.b2efd3f2.css.map": "/react-plotly-widget/static/css/main.b2efd3f2.css.map",
+    "main.29de5fed.js.map": "/react-plotly-widget/static/js/main.29de5fed.js.map",
     "787.067438e7.chunk.js.map": "/react-plotly-widget/static/js/787.067438e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85f07a24.css",
-    "static/js/main.ea55c4b6.js"
+    "static/css/main.b2efd3f2.css",
+    "static/js/main.29de5fed.js"
   ]
 }
