@@ -4,7 +4,17 @@ const PointSize = ({ pointSize, setPointSize }) => {
 
     return (
         <>
-            <div className="header">Point Size:</div>
+            <div className="header">Point size:</div>
+            <input
+                className="input-slider"
+                type="range"
+                min={minSize}
+                max={maxSize}
+                value={pointSize}
+                onChange={(e) => {
+                    setPointSize(e.target.value);
+                }}
+            />
             <input
                 className="input-number"
                 type="number"
@@ -19,16 +29,6 @@ const PointSize = ({ pointSize, setPointSize }) => {
                         newSize = "";
                     }
                     setPointSize(newSize);
-                }}
-            />
-            <input
-                className="input-slider"
-                type="range"
-                min={minSize}
-                max={maxSize}
-                value={pointSize}
-                onChange={(e) => {
-                    setPointSize(e.target.value);
                 }}
             />
         </>

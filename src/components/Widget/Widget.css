@@ -1,12 +1,6 @@
 body {
     --border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-button {
-    font-weight: bold;
-    border: var(--border);
-    background: rgba(0, 0, 0, 0.1);
-    padding: 0.2em 0.8em;
+    font-size: 0.9em;
 }
 
 #widget {
@@ -44,34 +38,75 @@ button {
 
 #widget-plot-container {
     height: 100%;
-    width: 100%;
+    width: calc(100% - 4px);
     border: var(--border);
+    border-radius: 4px;
+    padding: 1px;
 }
 
 #widget-menu-top {
     width: max-content;
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 1em;
+    grid-template-rows: auto auto auto;
+    gap: 0.2em;
+    border: var(--border);
+    border-radius: 4px;
+    padding: 0.2em 1em;
 }
 
 #widget-menu-bottom {
     width: max-content;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, auto);
     gap: 0.5em;
+    border: var(--border);
+    border-radius: 4px;
+    padding: 0.2em 0.8em;
 }
 
-#widget-menu-bottom > .header {
-    grid-row: 1 / span 2;
-}
-
-.input-slider {
-    max-width: 150px;
+.header {
+    padding-right: 0.2em;
 }
 
 #widget-menu-bottom > .input-number {
     width: 4em;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.input-slider {
+    max-width: 150px;
+    -webkit-appearance: none;
+    background-color: rgba(33, 150, 243, 0.6);
+    border-radius: 4px;
+}
+
+.input-slider::-webkit-slider-runnable-track {
+    height: 8px;
+    -webkit-appearance: none;
+    color: rgba(33, 150, 243, 1);
+}
+
+.input-slider::-webkit-slider-thumb {
+    width: 15px;
+    -webkit-appearance: none;
+    height: 15px;
+    background: rgba(33, 150, 243, 1);
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
+button {
     border: var(--border);
-    padding: 0.2em 0.8em;
+    border-radius: 4px;
+    background: rgba(33, 150, 243, 1);
+    transition: all 0.15s linear;
+    padding: 0.2em 0.5em;
+    color: white;
+}
+button:hover {
+    background: rgba(33, 150, 243, 0.8);
 }

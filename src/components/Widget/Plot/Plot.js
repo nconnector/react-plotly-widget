@@ -13,7 +13,7 @@ const Plot = ({ valuesX, valuesY, labelX, labelY, pointSize }) => {
                     type: "scatter",
                     mode: "markers",
                     marker: {
-                        color: "blue",
+                        color: "#2196f3",
                         size: pointSize,
                     },
                 },
