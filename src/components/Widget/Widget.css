@@ -37,7 +37,7 @@ button {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-rows: auto 1fr auto;
     gap: 1em;
     align-items: center;
 }
