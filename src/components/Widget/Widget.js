@@ -1,5 +1,6 @@
 import "./Widget.css";
 import React from "react";
+import Header from "./Header/Header";
 import PointSizeLogic from "./PointSize/PointSizeLogic";
 import PointSize from "./PointSize/PointSize";
 import InvertAxisLogic from "./InvertAxis/InvertAxisLogic";
@@ -10,7 +11,6 @@ const Widget = () => {
     const { pointSize, setPointSize } = PointSizeLogic();
     const { invertAxis, toggleInvertAxis } = InvertAxisLogic();
 
-    const headerText = "React dialogue plot";
     const data = [
         {
             label: "volume",
@@ -35,10 +35,7 @@ const Widget = () => {
     return (
         <div id="widget">
             <div id="widget-header">
-                <span>{headerText}</span>
-                <a href="https://github.com/nconnector/">
-                    <button>X</button>
-                </a>
+                <Header />
             </div>
             <div id="widget-content">
                 <div id="widget-menu-top">
